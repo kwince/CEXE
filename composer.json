@@ -1,0 +1,32 @@
+{
+    "name": "gearond/cexe",
+    "description": "A project for working on other projects on a RAM only machine. The project is kept on a USB, encoded by This",
+    "description2": "pro|ram. Think 'CEXE'. It is first |C|ompressed, then |E|xpanded by using a look up table of byte values,",
+    "description3": "then it is XORed against a randomized binary file, then that is |E|ncrypted,  The project is kept",
+    "description4": "on a USB. It is accessed using a LiveCD OS, then recovered into RAM to be worked on. When done working",
+    "description5": "'compress/expand/xor/encrypt' the file with a new version date to the USB. The files being worked on'",
+    "description6": "never hit the USB unecrypted/unobfuscated. The laptop/desktop should have a lockoutable, instant power",
+    "description7": "off feature that can be done instantly and holds for 30 seconds to let RAM die out.",
+    "version": "0.1.0",
+    "time":"YYYY-MM-DD HH:MM:SS",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "slimfast-donut",
+        "email": "slimfast-donut@gmail.com",
+        "role": "developer"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+          "php": ">=7.0",
+          "phpunit/phpunit": ">=9.0",
+        "paragonie/halite": "^5"
+    },
+    "autoload": {
+      "psr-4": {
+        "Cexe\\": "src/",
+        "": "src/"
+      }
+    }
+}
